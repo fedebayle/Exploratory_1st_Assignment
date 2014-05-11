@@ -15,7 +15,7 @@ with(data,{
 	lines(Datetime, Sub_metering_2, col='red')
 	lines(Datetime, Sub_metering_3, col='blue')
 	legend("topright",cex=0.7, lty = 1, col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n")
-	plot(Datetime,Global_reactive_power, type='l', xlab="datetime", ylab="Global_reactive_power", lwd=0.25)
+	plot(Datetime,Global_reactive_power, type='l', xlab="datetime")
 dev.copy(png, file ="plot4.png", width=480, height=480)
 dev.off()
 })
